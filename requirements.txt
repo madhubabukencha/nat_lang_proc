@@ -1,0 +1,12 @@
+# General
+jupyterlab==3.6.3
+
+# Data Handling Packages
+pandas==2.0.0
+numpy==1.24.2
+
+# ML Packages
+scikit-learn==1.2.2
+
+# NLP Packages
+nltk==3.8.1

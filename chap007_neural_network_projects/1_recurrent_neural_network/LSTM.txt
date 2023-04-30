@@ -1,0 +1,19 @@
+
+
+Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) that is capable of processing sequences of inputs and is particularly effective at learning from and making predictions on sequential data such as time series, natural language text, and speech recognition.
+
+LSTM networks have an internal cell state that allows them to selectively remember or forget information from previous time steps, making them well-suited for tasks that require modeling long-term dependencies in data.
+
+In Keras, a popular deep learning library, LSTM layers can be easily implemented using the `LSTM` class. Here are some of the most important parameters of the `LSTM` layer in Keras:
+
+- `units`: The dimensionality of the output space (i.e., the number of hidden units in the LSTM layer).
+- `activation`: The activation function to use. Popular options include `tanh`, `sigmoid`, and `relu`.
+- `dropout`: The fraction of the input units to drop during training to prevent overfitting.
+- `recurrent_dropout`: The fraction of the recurrent units to drop during training to prevent overfitting.
+- `return_sequences`: Whether to return the full sequence of outputs or only the last output in the output sequence.
+- `input_shape`: The shape of the input data (not including the batch size), which should be specified as a tuple.
+- `batch_size`: The number of samples per batch.
+- `time_steps`: The number of time steps in the input sequence.
+- `input_dim`: The dimensionality of the input space. 
+
+These are just some of the key parameters of the LSTM layer in Keras. There are many other parameters that can be adjusted to fine-tune the performance of the model for specific tasks.

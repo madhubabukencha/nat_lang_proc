@@ -1,0 +1,13 @@
+In Keras, `model.compile()` is used to configure the learning process of a model. It specifies the optimizer, loss function, and metrics that will be used to train the model.
+
+Here's what each of the parameters of `model.compile()` does:
+
+- `optimizer`: This specifies the optimization algorithm that will be used to update the parameters of the model during training. Some commonly used optimizers in Keras are stochastic gradient descent (`SGD`), Adam (`Adam`), and RMSprop (`RMSprop`).
+
+- `loss`: This specifies the loss function that the model will optimize during training. The loss function measures how well the model is able to predict the desired output. Examples of loss functions include mean squared error (`mse`), categorical cross-entropy (`categorical_crossentropy`), and binary cross-entropy (`binary_crossentropy`).
+
+- `metrics`: This specifies the evaluation metrics that will be used to monitor the performance of the model during training and testing. Metrics are different from loss functions in that they don't affect the training of the model. Examples of metrics include accuracy (`accuracy`), precision (`precision`), and recall (`recall`).
+
+After `model.compile()` is called, the model is ready to be trained using the `fit()` method. During training, the optimizer minimizes the loss function by adjusting the parameters of the model based on the gradients of the loss function with respect to the parameters. The metrics are used to evaluate the performance of the model on the training and validation data.
+
+In summary, `model.compile()` is an essential step in training a Keras model because it specifies how the model will be optimized and evaluated during training. It is necessary to call this method before calling `fit()` in order to properly configure the learning process.
